@@ -24,8 +24,13 @@ class AddBBCode
     public function addBBCode(ConfigureFormatter $event)
     {
         $event->configurator->BBCodes->addCustom(
-            '[LEFT]{TEXT1}[/LEFT]',
-            '<div class="post-text-align-left">{TEXT1}</div>'
+            '[LEFT]{TEXT}[/LEFT]',
+            '<div class="Post-text-align-left">{TEXT}</div>'
+        );
+
+        $event->configurator->BBCodes->addCustom(
+            '[RIGHT]{TEXT}[/RIGHT]',
+            '<div class="Post-text-align-right">{TEXT}</div>'
         );
     }
 }
