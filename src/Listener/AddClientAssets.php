@@ -16,7 +16,6 @@ class AddClientAssets
             $event->addAssets([
                 __DIR__.'/../../less/forum/extension.less',
             ]);
-            $event->addBootstrapper('freshman/bbcodealign/main');
         }
     }
 }
