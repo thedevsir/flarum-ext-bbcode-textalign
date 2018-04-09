@@ -25,7 +25,7 @@ class AddBBCode
     {
         $event->configurator->BBCodes->addCustom(
             '[LEFT]{TEXT1}[/LEFT]',
-            '<p style="padding:0;margin:0;direction:ltr;text-align:left;">{TEXT1}</p>'
+            '<div class="post-text-align-left">{TEXT1}</div>'
         );
     }
 }
