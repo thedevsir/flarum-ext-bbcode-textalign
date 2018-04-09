@@ -1,36 +1,29 @@
 {
-    "name": "freshman/flarum-ext-bbcode-with-textalign",
-    "description": "Allow posts to be formatted with BBCode.",
+    "name": "freshman/flarum-ext-bbcode-textalign",
+    "description": "Text-Align BBCode for Flarum",
     "type": "flarum-extension",
-    "keywords": ["formatting"],
+    "keywords": ["bbcode"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Toby Zerner",
-            "email": "toby.zerner@gmail.com"
+            "name": "Amir Irani",
+            "email": "freshmanlimited@gmail.com"
         }
     ],
-    "support": {
-        "issues": "https://github.com/flarum/core/issues",
-        "source": "https://github.com/flarum/flarum-ext-bbcode"
-    },
     "require": {
         "flarum/core": "^0.1.0-beta.5"
     },
     "autoload": {
         "psr-4": {
-            "Flarum\\BBCode\\": "src/"
+            "Freshman\\BBcodeAlign\\": "src/"
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        },
         "flarum-extension": {
-            "title": "BBCode*",
+            "title": "BBCode Align",
             "icon": {
-                "name": "bold",
-                "backgroundColor": "#238C59",
+                "name": "align-center",
+                "backgroundColor": "#f05049",
                 "color": "#fff"
             }
         }
